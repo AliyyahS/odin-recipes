@@ -1,36 +1,45 @@
 body {
-    width: 50vw;
-    margin: 40px auto;
-}
-
-h1,
-h2,
-h3 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Helvetica, Arial, sans-serif;;
 }
 
 p {
-    font-family: Helvetica, Arial, sans-serif;
     font-size: 15px;
 }
 
 button {
     cursor: pointer;
-    font-family: Helvetica, Arial, sans-serif;
-    font-weight: 500;
+    padding: 16px 40px;
+    border: none;
+    background-color: #151e1d;
+    color: #F0F8FF;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.body {
+    width: 90vw;
+    margin: auto;
+}
+
+.cards {
+    display: flex;
+    justify-content: flex-start;
+    gap: 40px;
 }
 
 .button-container {
     display: block;
-    margin-top: 30px;
-    padding-left: 20px;
+    margin-bottom: 30px;
 }
 
 .header-container,
 .ingredients-container,
 .instructions-container {
     padding: 20px 60px;
-    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .header-container,
@@ -38,14 +47,37 @@ button {
     background-color: #F0F8FF;
 }
 
+.description-container {
+    display: flex;
+    justify-content: flex-start;
+    gap: 60px;
+}
+
+.description-container div {
+    width: 600px;
+}
+
 .ingredients-container {
-    border: 8px solid #72A0C1;
+    min-width: 300px;
+}
+
+.ingredients-container {
+    border: 2px solid #72A0C1;
+}
+
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
 }
 
 .title {
-    text-align: center;
-    font-size: 38px;
-    font-style: italic;
+    margin: 40px 0;
+}
+
+h1 {
+    text-align: left;
+    font-size: 24px;
 }
 
 .recipe-card {
@@ -53,8 +85,9 @@ button {
     width: 300px;
     height: auto;
     background-color: #F0F8FF;
-    margin-top: 30px;
-    padding-bottom: 20px;
+    padding-bottom: 16px;
+    border: 2px solid #151e1d;
+    border-radius: 10px;
 }
 
 .recipe-card-title {
@@ -66,17 +99,13 @@ button {
 }
 
 .featured-image {
-    width: 80%;
+    width: 40%;
     height: auto;
 }
 
 .preview-image{
     width: 300px;
     height: auto;
-}
-
-.center {
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
+    border-top-right-radius: inherit;
+    border-top-left-radius: inherit;
 }
